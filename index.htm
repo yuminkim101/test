@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>클래스로 Classro - 동네 공방 원데이 클래스 예약</title>
+  <meta name="description" content="동네 공방·작업실의 원데이 클래스를 앱에서 찾고 바로 예약·결제하는 서비스, 클래스로.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&family=Noto+Serif+KR:wght@600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">클래스로</a>
+    <nav aria-label="주요 메뉴">
+      <a href="#classes">클래스</a>
+      <a href="#flow">예약 방법</a>
+      <a href="#numbers">숫자로 보기</a>
+      <a href="#about">회사 정보</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>오늘 저녁,<br>손으로 만드는<br>두 시간.</h1>
+        <p class="lead">동네 공방·작업실의 원데이 클래스를 앱에서 찾고, 날짜와 인원만 고르면 바로 예약하고 결제까지 끝납니다.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#classes">클래스 둘러보기</a>
+          <a class="btn btn-ghost" href="#flow">예약 방법 보기</a>
+        </div>
+      </div>
+
+      <div class="picker" data-picker>
+        <div class="swatch" data-swatch aria-live="polite">
+          <span class="swatch-shape" aria-hidden="true"></span>
+          <p class="swatch-title" data-title>도자기</p>
+          <p class="swatch-text" data-text>물레 위 흙이 그릇이 되는 과정을 직접 만져 보세요.</p>
+        </div>
+        <div class="chips" role="tablist" aria-label="클래스 종류">
+          <button role="tab" aria-selected="true" data-key="pottery">도자기</button>
+          <button role="tab" aria-selected="false" data-key="baking">베이킹</button>
+          <button role="tab" aria-selected="false" data-key="leather">가죽공예</button>
+          <button role="tab" aria-selected="false" data-key="flower">플라워</button>
+          <button role="tab" aria-selected="false" data-key="drawing">드로잉</button>
+          <button role="tab" aria-selected="false" data-key="perfume">향수</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="classes" class="section">
+      <h2>여섯 가지 손작업, 한 앱에서</h2>
+      <ul class="class-list">
+        <li><strong>도자기</strong><span>물레와 핸드빌딩으로 나만의 그릇 만들기</span></li>
+        <li><strong>베이킹</strong><span>반죽부터 굽기까지, 내가 만든 간식 들고 귀가</span></li>
+        <li><strong>가죽공예</strong><span>카드지갑, 키링 같은 작은 소품 제작</span></li>
+        <li><strong>플라워</strong><span>계절 꽃으로 꽃다발과 센터피스 만들기</span></li>
+        <li><strong>드로잉</strong><span>처음 펜을 잡아도 괜찮은 입문 수업</span></li>
+        <li><strong>향수</strong><span>향을 섞어 나만의 향수 조향하기</span></li>
+      </ul>
+    </section>
+
+    <section id="flow" class="section tinted">
+      <h2>예약은 다섯 걸음이면 끝나요</h2>
+      <ol class="steps">
+        <li><b>탐색</b><span>종류와 지역으로 클래스를 검색해요.</span></li>
+        <li><b>상세 확인</b><span>공방 소개와 후기를 살펴봐요.</span></li>
+        <li><b>날짜·인원 선택</b><span>가능한 시간대 중에서 골라요.</span></li>
+        <li><b>결제</b><span>간편결제로 한 번에 결제해요.</span></li>
+        <li><b>예약 완료</b><span>예약 내용을 확인하고 공방으로 가면 돼요.</span></li>
+      </ol>
+      <p class="note">iOS·Android 앱과 모바일 웹에서 같은 방식으로 이용할 수 있습니다.</p>
+    </section>
+
+    <section id="numbers" class="section">
+      <h2>클래스로가 걸어온 길</h2>
+      <p class="sub">2023년 3월 설립 · 2026년 9월 기준</p>
+      <dl class="stats">
+        <div><dt>제휴 공방</dt><dd data-count="420">약 420곳</dd><span>서울 280 · 경기 110 · 기타 30</span></div>
+        <div><dt>월 예약</dt><dd data-count="7000">약 7천 건</dd><span>한 달 동안 이뤄진 예약</span></div>
+        <div><dt>평균 결제액</dt><dd>42,000원</dd><span>1인 기준</span></div>
+      </dl>
+    </section>
+
+    <section id="about" class="section tinted">
+      <h2>회사 정보</h2>
+      <table class="info">
+        <tbody>
+          <tr><th scope="row">회사명</th><td>클래스로 (Classro)</td></tr>
+          <tr><th scope="row">설립</th><td>2023년 3월</td></tr>
+          <tr><th scope="row">대표</th><td>한서윤</td></tr>
+          <tr><th scope="row">구성원</th><td>30명 (개발 11, 디자인 4, PO 3, 마케팅 5, 운영·CS 5, 경영지원 2)</td></tr>
+          <tr><th scope="row">서비스</th><td>iOS·Android 앱, 모바일 웹</td></tr>
+          <tr><th scope="row">수익 모델</th><td>예약 건당 수수료 15%</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>클래스로</strong> Classro</p>
+    <p>수업용 가상 회사입니다. 등장하는 회사·인물·수치는 모두 지어낸 것입니다.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
