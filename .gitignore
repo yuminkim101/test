@@ -1,0 +1,65 @@
+# ── API 키, DB 비밀번호, 환경 변수 ──
+.env
+.env.*
+!.env.example
+*.env
+secrets/
+secret*.json
+credentials*.json
+config.local.*
+*.local.json
+
+# ── 인증서, 개인 키 ──
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+id_ed25519*
+
+# ── 데이터베이스 파일, 덤프 ──
+*.db
+*.sqlite
+*.sqlite3
+*.sql.gz
+*.dump
+dump/
+
+# ── 무거운 파일: 의존성, 빌드 결과, 캐시 ──
+node_modules/
+vendor/
+dist/
+build/
+.cache/
+.next/
+.parcel-cache/
+__pycache__/
+.venv/
+venv/
+
+# ── 무거운 파일: 영상, 압축, 디자인 원본 ──
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.psd
+*.ai
+*.fig
+
+# ── 로그 ──
+*.log
+logs/
+npm-debug.log*
+
+# ── 운영체제, 편집기가 만드는 파일 ──
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
